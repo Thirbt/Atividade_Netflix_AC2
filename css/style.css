@@ -97,10 +97,18 @@ nav i {
     width: 200px;
 }
 
+#botao-assistir:hover{
+    background-color: rgb(201, 201, 201);
+}
+
 #botao-info {
     background-color: #6262639c;
     color: white;
     width: 350px;
+}
+
+#botao-info:hover{
+    background-color: #6161616e;
 }
 
 .sub-tela-principal{
@@ -193,6 +201,11 @@ footer li {
     padding: 7px;
 }
 
+footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 footer p {
     color: #7e7e7e;
     font-size: 10px;
@@ -202,4 +215,9 @@ footer button {
     background-color: transparent;
     color: #7e7e7e;
     border: 1px solid #7e7e7e;
+    padding: 6px;
+}
+
+footer button:hover {
+    color: white;
 }
