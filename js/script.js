@@ -31,7 +31,7 @@ function loadTop10() {
 }
 
 function loadAlta() {
-    let filmes = [389, 496243, 497, 882569, 447365, 840326, 278, 995133];
+    let filmes = [389, 496243, 497, 882569, 447365, 840326, 278, 747188];
     let cont = 1;
 
     for (let i = 0; i < filmes.length; i++) {
