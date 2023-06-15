@@ -11,8 +11,8 @@ function loadVideoPrincipal(){
     let video = document.getElementById("video-principal");
     let descricao = document.getElementById("descricao");
     let titulo = document.getElementById("titulo");
-    requisitionVideo(urlVideo, video, 7);
-    requisitionOverview(urlOverview, descricao, titulo, 0);
+    requisitionVideo(urlVideo, video, 13);
+    requisitionOverview(urlOverview, descricao, titulo, 1);
 }
 
 function loadTop10() {
