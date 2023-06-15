@@ -2,7 +2,6 @@ loadVideoPrincipal();
 loadTop10();
 loadAlta();
 loadAcao();
-requisitionOverview();
 
 function loadVideoPrincipal(){
     const urlVideo = 'https://api.themoviedb.org/3/movie/603692/videos?language=en-US';
@@ -24,7 +23,9 @@ function loadTop10() {
         const urlImage = 'https://api.themoviedb.org/3/movie/' + filmes[i] + '/images';
         let video = document.getElementById('serie' + cont);
         let image = document.getElementById('card' + cont);
-        requisitionVideo(urlVideo, video, 1);
+        video.addEventListener('mouseover', function() {
+            requisitionVideo(urlVideo, video, 1);
+        })
         requisitionImage(urlImage, image, 0);
         cont++;
     }
@@ -39,7 +40,9 @@ function loadAlta() {
         const urlImage = 'https://api.themoviedb.org/3/movie/' + filmes[i] + '/images';
         let video = document.getElementById('alta' + cont);
         let image = document.getElementById('altaCard' + cont);
-        requisitionVideo(urlVideo, video, 1);
+        video.addEventListener('mouseover', function() {
+            requisitionVideo(urlVideo, video, 1);
+        })
         requisitionImage(urlImage, image, 0);
         cont++;
     }
@@ -54,7 +57,9 @@ function loadAcao() {
         const urlImage = 'https://api.themoviedb.org/3/movie/' + filmes[i] + '/images';
         let video = document.getElementById('acao' + cont);
         let image = document.getElementById('acaoCard' + cont);
-        requisitionVideo(urlVideo, video, 1);
+        video.addEventListener('mouseover', function() {
+            requisitionVideo(urlVideo, video, 1);
+        })
         requisitionImage(urlImage, image, 0);
         cont++;
     }
